@@ -7,11 +7,14 @@
 ./backend/e-commerce-platform-backend/web-client/.vscode
 ./backend/e-commerce-platform-backend/web-client/target
 ./backend/e-commerce-platform-backend/web-client/HElP.md
+./backend/e-commerce-platform-backend/web-client/content-service.iml
+
 
 #content-service
 ./backend/e-commerce-platform-backend/content-service/.mvn
 ./backend/e-commerce-platform-backend/content-service/.vscode
 ./backend/e-commerce-platform-backend/content-service/target
 ./backend/e-commerce-platform-backend/content-service/HElP.md
+./backend/e-commerce-platform-backend/content-service/content-service.iml
 
 
