@@ -19,8 +19,4 @@ public class BeanFactory {
         return new ContentService(repository);
     }
 
-    @Bean
-    public ContentRepository contentRepository(){
-        return new ContentRepository();
-    }
 }

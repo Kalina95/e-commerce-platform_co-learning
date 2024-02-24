@@ -1,9 +1,9 @@
 package com.ecommerce.contentservice.repository;
 
-import com.ecommerce.contentservice.model.Content;
+import com.ecommerce.contentservice.model.Image;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ContentRepository extends JpaRepository<Content, Integer> {
+public interface ImageRepository extends JpaRepository<Image, Integer> {
 }

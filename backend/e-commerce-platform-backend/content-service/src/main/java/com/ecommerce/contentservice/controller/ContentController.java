@@ -5,9 +5,7 @@ import com.ecommerce.contentservice.model.Content;
 import com.ecommerce.contentservice.service.ContentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @ResponseBody
@@ -18,6 +16,11 @@ public class ContentController {
     @GetMapping(value = "/content/{component}")
     public Content getContent(@PathVariable String component) {
         return service.getContentForComponent(Component.getComponentByValue(component));
+    }
+
+    @PutMapping(value = "/content")
+    public Content postContent(@RequestBody Content content){
+        return service.putContent(content);
     }
 
 }
