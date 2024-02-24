@@ -4,8 +4,6 @@
 Projekt podzielony jest na trzy katalogi. 
 - backend
 - frontend
-- database
-- mock
 
 Każdy z katalogów zawiera:
 - katalog docker, w którym przechowywany będzie DockerFile i inne pliki potrzebne do skonteneryzowania aplikacji.

@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+
+#backend
+#web-client
+./backend/e-commerce-platform-backend/web-client/.mvn
+./backend/e-commerce-platform-backend/web-client/.vscode
+./backend/e-commerce-platform-backend/web-client/target
+./backend/e-commerce-platform-backend/web-client/HElP.md
+
+#content-service
+./backend/e-commerce-platform-backend/content-service/.mvn
+./backend/e-commerce-platform-backend/content-service/.vscode
+./backend/e-commerce-platform-backend/content-service/target
+./backend/e-commerce-platform-backend/content-service/HElP.md
+
+
