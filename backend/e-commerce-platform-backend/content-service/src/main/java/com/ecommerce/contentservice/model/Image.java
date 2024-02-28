@@ -15,7 +15,7 @@ import java.io.Serializable;
 @Table(name = "IMAGES")
 public class Image implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "IMAGE_ID")
     private int imageId;
     @Column(name = "COMPONENT")

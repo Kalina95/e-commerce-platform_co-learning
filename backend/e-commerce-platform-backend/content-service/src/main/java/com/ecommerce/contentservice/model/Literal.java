@@ -15,7 +15,7 @@ import java.io.Serializable;
 @Table(name = "LITERALS")
 public class Literal implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "LITERAL_ID")
     private int literalId;
     @Column(name = "COMPONENT")

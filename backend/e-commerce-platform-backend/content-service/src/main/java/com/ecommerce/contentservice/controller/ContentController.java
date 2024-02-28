@@ -19,8 +19,7 @@ public class ContentController {
     }
 
     @PutMapping(value = "/content")
-    public Content postContent(@RequestBody Content content){
+    public Content postContent(@RequestBody Content content) {
         return service.putContent(content);
     }
-
 }
