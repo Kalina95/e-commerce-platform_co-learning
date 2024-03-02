@@ -1,0 +1,1 @@
+docker run -p 8082:8082 -t ecp-content-service
