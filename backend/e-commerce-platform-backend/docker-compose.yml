@@ -1,0 +1,23 @@
+services:
+  web-client:
+    image: ecp-web-client
+    container_name: web-client
+    ports:
+      - "8080:8080"
+    networks:
+      - net-ecp
+
+  content-service:
+    image: ecp-content-service
+    container_name: content-service
+    ports:
+      - "8082:8082"
+    networks:
+      - net-ecp
+      - net-content-service
+
+networks:
+  net-ecp:
+    name: net-ecp
+  net-content-service:
+    name: net-content-service
