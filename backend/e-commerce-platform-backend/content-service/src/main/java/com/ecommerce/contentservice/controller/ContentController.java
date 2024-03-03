@@ -4,8 +4,17 @@ import com.ecommerce.contentservice.model.Component;
 import com.ecommerce.contentservice.model.Content;
 import com.ecommerce.contentservice.service.ContentService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 @Controller
 @ResponseBody

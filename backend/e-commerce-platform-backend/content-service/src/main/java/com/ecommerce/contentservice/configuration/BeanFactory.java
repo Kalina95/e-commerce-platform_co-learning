@@ -1,8 +1,10 @@
 package com.ecommerce.contentservice.configuration;
 
 import com.ecommerce.contentservice.controller.ContentController;
+import com.ecommerce.contentservice.controller.ImageController;
 import com.ecommerce.contentservice.repository.ContentRepository;
 import com.ecommerce.contentservice.service.ContentService;
+import com.ecommerce.contentservice.service.ImageService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -17,6 +19,15 @@ public class BeanFactory {
     @Bean
     public ContentService contentService(ContentRepository repository){
         return new ContentService(repository);
+    }
+    @Bean
+    public ImageService imageService(){
+        return new ImageService();
+    }
+
+    @Bean
+    public ImageController imageController(ImageService imageService){
+        return new ImageController(imageService);
     }
 
 }
