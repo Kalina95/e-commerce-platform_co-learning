@@ -1,6 +1,5 @@
 package com.ecommerce.contentservice.controller;
 
-import com.ecommerce.contentservice.model.Component;
 import com.ecommerce.contentservice.model.Content;
 import com.ecommerce.contentservice.service.ContentService;
 import lombok.RequiredArgsConstructor;
