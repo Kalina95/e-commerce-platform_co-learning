@@ -25,4 +25,9 @@ public enum Component {
                 .findFirst()
                 .orElseThrow(()->new RuntimeException("there is no such component as: " + value));
     }
+
+    public static String getComponentValueAsStringInPascalNotation(Component component){
+        String componentAsString = component.getValue();
+        return componentAsString.toUpperCase().replace('-', '_');
+    }
 }
